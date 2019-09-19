@@ -1,7 +1,9 @@
 import { gateway as MoltinGateway } from '@moltin/sdk'
 
+const VUE_APP_MOLTIN_CLIENT_ID = process.env.VUE_APP_MOLTIN_CLIENT_ID || 'EdP3Gi1agyUF3yFS7Ngm8iyodLgbSR3wY4ceoJl0d2'
+
 const Moltin = MoltinGateway({
-  client_id: 'EdP3Gi1agyUF3yFS7Ngm8iyodLgbSR3wY4ceoJl0d2'
+  client_id: VUE_APP_MOLTIN_CLIENT_ID,
 })
 
 export default {
